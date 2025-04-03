@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --green:#3CB371	;
+}
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: "Prompt", serif;
+    font-weight: 400;
+
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transform: .2s;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+    overflow-x: hidden;
+}
+/*กำหนดหน้าแรกที่โชว์*/
+section{
+    padding: 2rem 9%;
+}
+/*หัวabout*/
+.heading{
+    text-align: center;
+    font-size: 7rem;
+    color: #333;
+    padding: 1rem;
+    margin: .5rem 0;
+    background: rgb(255,51,153,.05);
+}
+.heading span{
+color: var(--green);
+}
+/*ทำปุ่มหน้าแรก*/
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #ffffff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.btn:hover{
+    background: var(--green);
+}
+header{
+    position: fixed;
+    top: 0; left: 0;right: 0;
+    background: #ffffff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgb(0,0,0,.1);
+}
+header a.Logo{
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+}
+header .Logo span{
+    color: var(--pink);
+}
+nav.navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #333;
+}
+nav.navbar a:hover{
+    color: var(--green);
+}
+header #toggler{
+    display: none;
+}
+header label.fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem rgb(0,0,0,.3);
+    display: none;
+}
+
+
+ /* Profile Dropdown */
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-dropdown .fa-regular{
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+.profile-dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.profile-dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.profile-dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show dropdown on hover */
+.profile-dropdown:hover .profile-dropdown-content {
+    display: block;
+}
+
+/* Language Selector */
+.role {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.role a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.role a:hover {
+    text-decoration: underline;
+}
+
+.role a.active {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/*คำโปรยหน้าแรก .homeใช้วิธีทำอีกคลิป*/
+.home{
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    
+}
+
+.home.content{
+    max-width: 50rem;
+}
+.content h3{
+    text-align: center;
+    margin-top: 9rem;
+    font-size: 6rem;
+    color: #333;
+}
+.content h2{
+    text-align: center;
+    font-size: 3.5rem;
+    color:var(--green);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+.content p{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #999;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+
+
+/* Profile Form */
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+form {
+    margin-top: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+input, select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="submit"] {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}

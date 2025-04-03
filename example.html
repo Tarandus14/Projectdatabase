@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonnanashop</title>
+
+    <link rel="stylesheet" href="styleprofile.css" >
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <a href="index.html">
+                <img src="logo_bonnana.png" class="logonav">                  
+            </a>           
+    </nav>
+
+
+    <div class="container">
+        <h1>User Profile</h1>
+        <form action="update_profile.php" method="POST">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="Email" name="Email" value="<?php echo htmlspecialchars($Email); ?>" readonly>
+            </div>
+            <div class="form-group">
+                <label for="Username">Username</label>
+                <input type="text" id="Username" name="Username" value="<?php echo htmlspecialchars($Username); ?>">
+            </div>
+            <div class="form-group">
+                <label for="Name_Custumer">Full Name</label>
+                <input type="text" id="Name_Custumer" name="Name_Custumer" value="<?php echo htmlspecialchars($Name_Custumer); ?>">
+            </div>
+            <div class="form-group">
+                <label for="Phone_Number">Phone</label>
+                <input type="text" id="Phone_Number" name="Phone_Number" value="<?php echo htmlspecialchars($Phone_Number); ?>">
+            </div>
+            <div class="form-group">
+                <label for="Password">Password</label>
+                <input type="password" id="Password" name="Password" value="<?php echo htmlspecialchars($Password); ?>">
+            </div>
+            <input type="submit" value="Update Profile" >
+        </form>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --green:#3CB371	;
+}
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: "Prompt", serif;
+    font-weight: 400;
+
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transform: .2s;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+    overflow-x: hidden;
+}
+/*กำหนดหน้าแรกที่โชว์*/
+section{
+    padding: 2rem 9%;
+}
+/*หัวabout*/
+.heading{
+    text-align: center;
+    font-size: 7rem;
+    color: #333;
+    padding: 1rem;
+    margin: .5rem 0;
+    background: rgb(255,51,153,.05);
+}
+.heading span{
+color: var(--green);
+}
+/*ทำปุ่มหน้าแรก*/
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #ffffff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.btn:hover{
+    background: var(--green);
+}
+header{
+    position: fixed;
+    top: 0; left: 0;right: 0;
+    background: #ffffff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgb(0,0,0,.1);
+}
+header a.Logo{
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+}
+header .Logo span{
+    color: var(--pink);
+}
+nav.navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #333;
+}
+nav.navbar a:hover{
+    color: var(--green);
+}
+header #toggler{
+    display: none;
+}
+header label.fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem rgb(0,0,0,.3);
+    display: none;
+}
+
+
+ /* Profile Dropdown */
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-dropdown .fa-regular{
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+.profile-dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.profile-dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.profile-dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show dropdown on hover */
+.profile-dropdown:hover .profile-dropdown-content {
+    display: block;
+}
+
+/* Language Selector */
+.role {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.role a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.role a:hover {
+    text-decoration: underline;
+}
+
+.role a.active {
+    font-weight: bold;
+    color: #007bff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.card-container {
+    padding: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    width: 900px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 2px solid #e0e0e0;
+}
+
+.card img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-row i {
+    font-size: 18px;
+    color: #4caf50;
+}
+
+.info-row span {
+    font-size: 14px;
+    color: #555;
+}
+
+.divider {
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 15px 0;
+}
+
+.centerbb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-button {
+    background-color: #4caf50;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    font-size: 13px;
+}
+
+.register-button:hover {
+    background-color: #45a049;
+}
+
+.activity-details {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    padding-left: 5px;
+}
+
+.activity-details i {
+    color: #4caf50;
+    margin-right: 5px;
+}
+
+.box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    
+    }
+    .box{
+    flex: 1 1 30rem;
+    position: relative;
+    }
+    .images-box{
+        gap: 2rem;
+        flex-wrap: wrap;
+        padding: 2rem 0;
+        padding-bottom: 3rem;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        
+    }
+    .content1{
+        padding: 2rem;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    
+    .content1 h3{
+        font-size: 2.5rem;
+        color: #333;
+    }
+    .content1  a:hover h3{
+        color: var(--green);
+    }
+    .price {
+        font-size: 2rem;
+        font-weight: bolder;
+        padding: 1rem;
+        color:#ce2c2c
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    .row form{
+        flex: 1 1 40rem;
+        padding: 2rem 2.5rem;
+        box-shadow: 0 .5rem 1.5rem rgb(0,0,0,.1);
+        border: .1rem solid rgb(0,0,0,.1);
+        background: #ffffff;
+        border-radius: .5rem;
+    }
+    .image{
+        flex: 1 1 40rem;
+    }
+    .row img{
+        width: 100%;
+        border-radius:0px 30px 30px 0px ;
+    }
+    .row form .box{
+        padding: 1rem;
+        font-size: 1.7rem;
+        color: #333;
+        text-transform: none;
+        border: .1rem solid rgb(0,0,0,.1);
+        border-radius: .5rem;
+        margin: .7rem 0 ;
+        width: 100%;
+    }
+    .row form .box:focus{
+        border-color: var(--green);
+    }
+    .row form textarea{
+        height: 15rem;
+        resize: none;
+    }
+    .box-container11{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        border-top: .1rem solid rgb(0,0,0,.1);
+    }
+    fo.box-container11.box{
+        flex:  1 1 25rem;
+    }
+    .box h3{
+        color: #333;
+        font-size: 2.5rem;
+        padding: 1rem 0;
+    }
+    .box a {
+        display: block;
+        color: #666;
+        font-size: 1.5rem;
+        padding: 1rem 0;
+    }
+    .box a:hover {
+        color:var(--green);
+        text-decoration: underline;
+    }
+    .box img{
+        margin-top: 1rem;
+    }

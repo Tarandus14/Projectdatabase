@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wdth,wght@62.5,500&display=swap');
+
+:root {
+    --primary-color: #1d3642;
+    --secondary-color: #e9c675;
+    --text-light: #cbd5e1;
+    --white: #ffffff;
+    --max-width: 1800px;
+    --header-font: "Kanit", serif;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Noto Sans", sans-serif;
+        text-decoration: none;
+    }
+
+    
